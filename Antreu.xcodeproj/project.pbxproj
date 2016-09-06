@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B3EA654D9A93C0156CACC71 /* Pods_AntreuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0088BD35E0B3E1B6324713A /* Pods_AntreuUITests.framework */; };
+		24A2363D1D7F5CAE0072B9E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24A2363C1D7F5CAE0072B9E9 /* GoogleService-Info.plist */; };
+		24CBD2401D7F5C300010BEAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBD23F1D7F5C300010BEAF /* AppDelegate.swift */; };
+		24CBD2421D7F5C300010BEAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBD2411D7F5C300010BEAF /* ViewController.swift */; };
+		24CBD2451D7F5C300010BEAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CBD2431D7F5C300010BEAF /* Main.storyboard */; };
+		24CBD2471D7F5C300010BEAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24CBD2461D7F5C300010BEAF /* Assets.xcassets */; };
+		24CBD24A1D7F5C300010BEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CBD2481D7F5C300010BEAF /* LaunchScreen.storyboard */; };
+		24CBD2551D7F5C300010BEAF /* AntreuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBD2541D7F5C300010BEAF /* AntreuTests.swift */; };
+		24CBD2601D7F5C300010BEAF /* AntreuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBD25F1D7F5C300010BEAF /* AntreuUITests.swift */; };
+		6D4D386B3BA53739A7455FC2 /* Pods_AntreuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF020C75CBCC878993E59F2 /* Pods_AntreuTests.framework */; };
+		C604E9A25473A16E5126B642 /* Pods_Antreu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA15E479EA878DAEDAEC984 /* Pods_Antreu.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24CBD2511D7F5C300010BEAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CBD2341D7F5C300010BEAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24CBD23B1D7F5C300010BEAF;
+			remoteInfo = Antreu;
+		};
+		24CBD25C1D7F5C300010BEAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24CBD2341D7F5C300010BEAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24CBD23B1D7F5C300010BEAF;
+			remoteInfo = Antreu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2114AC9B79681FFEF753B2E8 /* Pods-Antreu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antreu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Antreu/Pods-Antreu.release.xcconfig"; sourceTree = "<group>"; };
+		24A2363C1D7F5CAE0072B9E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24CBD23C1D7F5C300010BEAF /* Antreu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Antreu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24CBD23F1D7F5C300010BEAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24CBD2411D7F5C300010BEAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24CBD2441D7F5C300010BEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24CBD2461D7F5C300010BEAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24CBD2491D7F5C300010BEAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24CBD24B1D7F5C300010BEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CBD2501D7F5C300010BEAF /* AntreuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntreuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24CBD2541D7F5C300010BEAF /* AntreuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntreuTests.swift; sourceTree = "<group>"; };
+		24CBD2561D7F5C300010BEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24CBD25B1D7F5C300010BEAF /* AntreuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AntreuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24CBD25F1D7F5C300010BEAF /* AntreuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntreuUITests.swift; sourceTree = "<group>"; };
+		24CBD2611D7F5C300010BEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24DDB5071D7F6329007A5C15 /* Antreu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Antreu-Bridging-Header.h"; sourceTree = "<group>"; };
+		44240163A989C98B8EB49DFB /* Pods-AntreuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntreuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntreuTests/Pods-AntreuTests.release.xcconfig"; sourceTree = "<group>"; };
+		5BF020C75CBCC878993E59F2 /* Pods_AntreuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntreuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E03A14921D3E40E9487E551 /* Pods-AntreuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntreuTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntreuTests/Pods-AntreuTests.debug.xcconfig"; sourceTree = "<group>"; };
+		70D40F824BD00119AFD6C2D2 /* Pods-AntreuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntreuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntreuUITests/Pods-AntreuUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8FA15E479EA878DAEDAEC984 /* Pods_Antreu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Antreu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0088BD35E0B3E1B6324713A /* Pods_AntreuUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntreuUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1E2CF64E74DBDD39885773E /* Pods-AntreuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntreuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AntreuUITests/Pods-AntreuUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A4B027184A1ED243EFBE28 /* Pods-Antreu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Antreu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Antreu/Pods-Antreu.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24CBD2391D7F5C300010BEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C604E9A25473A16E5126B642 /* Pods_Antreu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24CBD24D1D7F5C300010BEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D4D386B3BA53739A7455FC2 /* Pods_AntreuTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24CBD2581D7F5C300010BEAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3EA654D9A93C0156CACC71 /* Pods_AntreuUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24CBD2331D7F5C300010BEAF = {
+			isa = PBXGroup;
+			children = (
+				24CBD23E1D7F5C300010BEAF /* Antreu */,
+				24CBD2531D7F5C300010BEAF /* AntreuTests */,
+				24CBD25E1D7F5C300010BEAF /* AntreuUITests */,
+				24CBD23D1D7F5C300010BEAF /* Products */,
+				FB9AEBE0CF09C57BBD73906F /* Pods */,
+				70C0CB9D1FB5A1A65EC170AC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24CBD23D1D7F5C300010BEAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24CBD23C1D7F5C300010BEAF /* Antreu.app */,
+				24CBD2501D7F5C300010BEAF /* AntreuTests.xctest */,
+				24CBD25B1D7F5C300010BEAF /* AntreuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24CBD23E1D7F5C300010BEAF /* Antreu */ = {
+			isa = PBXGroup;
+			children = (
+				24A2363C1D7F5CAE0072B9E9 /* GoogleService-Info.plist */,
+				24CBD23F1D7F5C300010BEAF /* AppDelegate.swift */,
+				24CBD2411D7F5C300010BEAF /* ViewController.swift */,
+				24CBD2431D7F5C300010BEAF /* Main.storyboard */,
+				24CBD2461D7F5C300010BEAF /* Assets.xcassets */,
+				24CBD2481D7F5C300010BEAF /* LaunchScreen.storyboard */,
+				24CBD24B1D7F5C300010BEAF /* Info.plist */,
+				24DDB5071D7F6329007A5C15 /* Antreu-Bridging-Header.h */,
+			);
+			path = Antreu;
+			sourceTree = "<group>";
+		};
+		24CBD2531D7F5C300010BEAF /* AntreuTests */ = {
+			isa = PBXGroup;
+			children = (
+				24CBD2541D7F5C300010BEAF /* AntreuTests.swift */,
+				24CBD2561D7F5C300010BEAF /* Info.plist */,
+			);
+			path = AntreuTests;
+			sourceTree = "<group>";
+		};
+		24CBD25E1D7F5C300010BEAF /* AntreuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24CBD25F1D7F5C300010BEAF /* AntreuUITests.swift */,
+				24CBD2611D7F5C300010BEAF /* Info.plist */,
+			);
+			path = AntreuUITests;
+			sourceTree = "<group>";
+		};
+		70C0CB9D1FB5A1A65EC170AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FA15E479EA878DAEDAEC984 /* Pods_Antreu.framework */,
+				5BF020C75CBCC878993E59F2 /* Pods_AntreuTests.framework */,
+				B0088BD35E0B3E1B6324713A /* Pods_AntreuUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB9AEBE0CF09C57BBD73906F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6A4B027184A1ED243EFBE28 /* Pods-Antreu.debug.xcconfig */,
+				2114AC9B79681FFEF753B2E8 /* Pods-Antreu.release.xcconfig */,
+				6E03A14921D3E40E9487E551 /* Pods-AntreuTests.debug.xcconfig */,
+				44240163A989C98B8EB49DFB /* Pods-AntreuTests.release.xcconfig */,
+				B1E2CF64E74DBDD39885773E /* Pods-AntreuUITests.debug.xcconfig */,
+				70D40F824BD00119AFD6C2D2 /* Pods-AntreuUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24CBD23B1D7F5C300010BEAF /* Antreu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24CBD2641D7F5C300010BEAF /* Build configuration list for PBXNativeTarget "Antreu" */;
+			buildPhases = (
+				41A20388F8DEE4885B8E8257 /* [CP] Check Pods Manifest.lock */,
+				24CBD2381D7F5C300010BEAF /* Sources */,
+				24CBD2391D7F5C300010BEAF /* Frameworks */,
+				24CBD23A1D7F5C300010BEAF /* Resources */,
+				E197E1C595B03CF370750F6E /* [CP] Embed Pods Frameworks */,
+				405378DF2AFBEDB4DEEB8F10 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Antreu;
+			productName = Antreu;
+			productReference = 24CBD23C1D7F5C300010BEAF /* Antreu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24CBD24F1D7F5C300010BEAF /* AntreuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24CBD2671D7F5C300010BEAF /* Build configuration list for PBXNativeTarget "AntreuTests" */;
+			buildPhases = (
+				75D3E8B90CAD462E5EBAE081 /* [CP] Check Pods Manifest.lock */,
+				24CBD24C1D7F5C300010BEAF /* Sources */,
+				24CBD24D1D7F5C300010BEAF /* Frameworks */,
+				24CBD24E1D7F5C300010BEAF /* Resources */,
+				53C5E3426F5AF274D7F22A58 /* [CP] Embed Pods Frameworks */,
+				F933E51FF35CFF3E925BEB79 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24CBD2521D7F5C300010BEAF /* PBXTargetDependency */,
+			);
+			name = AntreuTests;
+			productName = AntreuTests;
+			productReference = 24CBD2501D7F5C300010BEAF /* AntreuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24CBD25A1D7F5C300010BEAF /* AntreuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24CBD26A1D7F5C300010BEAF /* Build configuration list for PBXNativeTarget "AntreuUITests" */;
+			buildPhases = (
+				5CB54242F486A19F069C79C1 /* [CP] Check Pods Manifest.lock */,
+				24CBD2571D7F5C300010BEAF /* Sources */,
+				24CBD2581D7F5C300010BEAF /* Frameworks */,
+				24CBD2591D7F5C300010BEAF /* Resources */,
+				9559BBB5DC9AF21352B8B7F2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24CBD25D1D7F5C300010BEAF /* PBXTargetDependency */,
+			);
+			name = AntreuUITests;
+			productName = AntreuUITests;
+			productReference = 24CBD25B1D7F5C300010BEAF /* AntreuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24CBD2341D7F5C300010BEAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Miguel Bazán";
+				TargetAttributes = {
+					24CBD23B1D7F5C300010BEAF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N67E6A6LEZ;
+					};
+					24CBD24F1D7F5C300010BEAF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N67E6A6LEZ;
+						TestTargetID = 24CBD23B1D7F5C300010BEAF;
+					};
+					24CBD25A1D7F5C300010BEAF = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N67E6A6LEZ;
+						TestTargetID = 24CBD23B1D7F5C300010BEAF;
+					};
+				};
+			};
+			buildConfigurationList = 24CBD2371D7F5C300010BEAF /* Build configuration list for PBXProject "Antreu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24CBD2331D7F5C300010BEAF;
+			productRefGroup = 24CBD23D1D7F5C300010BEAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24CBD23B1D7F5C300010BEAF /* Antreu */,
+				24CBD24F1D7F5C300010BEAF /* AntreuTests */,
+				24CBD25A1D7F5C300010BEAF /* AntreuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24CBD23A1D7F5C300010BEAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24CBD24A1D7F5C300010BEAF /* LaunchScreen.storyboard in Resources */,
+				24CBD2471D7F5C300010BEAF /* Assets.xcassets in Resources */,
+				24A2363D1D7F5CAE0072B9E9 /* GoogleService-Info.plist in Resources */,
+				24CBD2451D7F5C300010BEAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24CBD24E1D7F5C300010BEAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24CBD2591D7F5C300010BEAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		405378DF2AFBEDB4DEEB8F10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Antreu/Pods-Antreu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41A20388F8DEE4885B8E8257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53C5E3426F5AF274D7F22A58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntreuTests/Pods-AntreuTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CB54242F486A19F069C79C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75D3E8B90CAD462E5EBAE081 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9559BBB5DC9AF21352B8B7F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntreuUITests/Pods-AntreuUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E197E1C595B03CF370750F6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Antreu/Pods-Antreu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F933E51FF35CFF3E925BEB79 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AntreuTests/Pods-AntreuTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24CBD2381D7F5C300010BEAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24CBD2421D7F5C300010BEAF /* ViewController.swift in Sources */,
+				24CBD2401D7F5C300010BEAF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24CBD24C1D7F5C300010BEAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24CBD2551D7F5C300010BEAF /* AntreuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24CBD2571D7F5C300010BEAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24CBD2601D7F5C300010BEAF /* AntreuUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24CBD2521D7F5C300010BEAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24CBD23B1D7F5C300010BEAF /* Antreu */;
+			targetProxy = 24CBD2511D7F5C300010BEAF /* PBXContainerItemProxy */;
+		};
+		24CBD25D1D7F5C300010BEAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24CBD23B1D7F5C300010BEAF /* Antreu */;
+			targetProxy = 24CBD25C1D7F5C300010BEAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24CBD2431D7F5C300010BEAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24CBD2441D7F5C300010BEAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24CBD2481D7F5C300010BEAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24CBD2491D7F5C300010BEAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24CBD2621D7F5C300010BEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24CBD2631D7F5C300010BEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24CBD2651D7F5C300010BEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A4B027184A1ED243EFBE28 /* Pods-Antreu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Antreu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelbazan.Antreu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Antreu/Antreu-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		24CBD2661D7F5C300010BEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2114AC9B79681FFEF753B2E8 /* Pods-Antreu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Antreu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelbazan.Antreu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Antreu/Antreu-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		24CBD2681D7F5C300010BEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E03A14921D3E40E9487E551 /* Pods-AntreuTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AntreuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelbazan.AntreuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Antreu.app/Antreu";
+			};
+			name = Debug;
+		};
+		24CBD2691D7F5C300010BEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44240163A989C98B8EB49DFB /* Pods-AntreuTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AntreuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelbazan.AntreuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Antreu.app/Antreu";
+			};
+			name = Release;
+		};
+		24CBD26B1D7F5C300010BEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E2CF64E74DBDD39885773E /* Pods-AntreuUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AntreuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelbazan.AntreuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Antreu;
+			};
+			name = Debug;
+		};
+		24CBD26C1D7F5C300010BEAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D40F824BD00119AFD6C2D2 /* Pods-AntreuUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = AntreuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = miguelbazan.AntreuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Antreu;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24CBD2371D7F5C300010BEAF /* Build configuration list for PBXProject "Antreu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24CBD2621D7F5C300010BEAF /* Debug */,
+				24CBD2631D7F5C300010BEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24CBD2641D7F5C300010BEAF /* Build configuration list for PBXNativeTarget "Antreu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24CBD2651D7F5C300010BEAF /* Debug */,
+				24CBD2661D7F5C300010BEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24CBD2671D7F5C300010BEAF /* Build configuration list for PBXNativeTarget "AntreuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24CBD2681D7F5C300010BEAF /* Debug */,
+				24CBD2691D7F5C300010BEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24CBD26A1D7F5C300010BEAF /* Build configuration list for PBXNativeTarget "AntreuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24CBD26B1D7F5C300010BEAF /* Debug */,
+				24CBD26C1D7F5C300010BEAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24CBD2341D7F5C300010BEAF /* Project object */;
+}
