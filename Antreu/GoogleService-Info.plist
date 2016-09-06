@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>731080758245-jlpand3eagimin0vg0ohdpaqn46nh8dv.apps.googleusercontent.com</string>
+	<string>781042588512-p08c3atc8o05rciuuj4qj6rqvdad6ee3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.731080758245-jlpand3eagimin0vg0ohdpaqn46nh8dv</string>
+	<string>com.googleusercontent.apps.781042588512-p08c3atc8o05rciuuj4qj6rqvdad6ee3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyA1tju9HUWCattxEJXgBCEQAwKW5J3Dt9w</string>
+	<string>AIzaSyB7H2cuyXpQ-8wFGXvFLcMdSKzmMPClOI0</string>
 	<key>GCM_SENDER_ID</key>
-	<string>731080758245</string>
+	<string>781042588512</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>miguelbazan.Antreu</string>
+	<string>mc.Atreu</string>
 	<key>PROJECT_ID</key>
-	<string>antreu-1b673</string>
+	<string>antreu-98c9f</string>
 	<key>STORAGE_BUCKET</key>
-	<string>antreu-1b673.appspot.com</string>
+	<string>antreu-98c9f.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:731080758245:ios:f64c97d9a7c38d6d</string>
+	<string>1:781042588512:ios:0da6b22d95a84f3a</string>
 	<key>DATABASE_URL</key>
-	<string>https://antreu-1b673.firebaseio.com</string>
+	<string>https://antreu-98c9f.firebaseio.com</string>
 </dict>
 </plist>
