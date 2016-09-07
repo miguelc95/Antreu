@@ -49,8 +49,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             {
                 (user, error) in
             }
+        FIRAuth.auth()?.addAuthStateDidChangeListener { auth, user in
+            if let user = user {
+                if let user = FIRAuth.auth()?.currentUser {
+                    let name = user.displayName
+                    let email = user.email
+                    let photoUrl = user.photoURL
+                    let uid = user.uid;  // The user's ID, unique to the Firebase project.
+                    // Do NOT use this value to authenticate with
+                    // your backend server, if you have one. Use
+                    // getTokenWithCompletion:completion: instead.
+                    print("\(name) \n \(email)")
+                } else {
+                    // No user is signed in.
+                }
+            } else {
+                // No user is signed in.
+            }
+        }
     
     }
+    
     
     func signIn(signIn: GIDSignIn!, didDisconnectWithUser user:GIDGoogleUser!,withError error: NSError!)
     {

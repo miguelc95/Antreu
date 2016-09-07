@@ -9,6 +9,7 @@ target 'Antreu' do
   pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
+  pod 'Firebase/Database'
 
   target 'AntreuTests' do
     inherit! :search_paths

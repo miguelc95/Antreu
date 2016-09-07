@@ -15,6 +15,7 @@
 		24CBD24A1D7F5C300010BEAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CBD2481D7F5C300010BEAF /* LaunchScreen.storyboard */; };
 		24CBD2551D7F5C300010BEAF /* AntreuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBD2541D7F5C300010BEAF /* AntreuTests.swift */; };
 		24CBD2601D7F5C300010BEAF /* AntreuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CBD25F1D7F5C300010BEAF /* AntreuUITests.swift */; };
+		3190E26E1D7FC586009015B6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3190E26D1D7FC586009015B6 /* TableViewController.swift */; };
 		31EA52681D7F875B00FBEDB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 31EA52671D7F875B00FBEDB1 /* GoogleService-Info.plist */; };
 		6D4D386B3BA53739A7455FC2 /* Pods_AntreuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF020C75CBCC878993E59F2 /* Pods_AntreuTests.framework */; };
 		C604E9A25473A16E5126B642 /* Pods_Antreu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FA15E479EA878DAEDAEC984 /* Pods_Antreu.framework */; };
@@ -53,6 +54,7 @@
 		24CBD25F1D7F5C300010BEAF /* AntreuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AntreuUITests.swift; sourceTree = "<group>"; };
 		24CBD2611D7F5C300010BEAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		24DDB5071D7F6329007A5C15 /* Antreu-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Antreu-Bridging-Header.h"; sourceTree = "<group>"; };
+		3190E26D1D7FC586009015B6 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		31EA52671D7F875B00FBEDB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		44240163A989C98B8EB49DFB /* Pods-AntreuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AntreuTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AntreuTests/Pods-AntreuTests.release.xcconfig"; sourceTree = "<group>"; };
 		5BF020C75CBCC878993E59F2 /* Pods_AntreuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AntreuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				24CBD23F1D7F5C300010BEAF /* AppDelegate.swift */,
 				24CBD2411D7F5C300010BEAF /* ViewController.swift */,
 				24CBD2431D7F5C300010BEAF /* Main.storyboard */,
+				3190E26D1D7FC586009015B6 /* TableViewController.swift */,
 				24CBD2461D7F5C300010BEAF /* Assets.xcassets */,
 				24CBD2481D7F5C300010BEAF /* LaunchScreen.storyboard */,
 				24CBD24B1D7F5C300010BEAF /* Info.plist */,
@@ -437,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24CBD2421D7F5C300010BEAF /* ViewController.swift in Sources */,
+				3190E26E1D7FC586009015B6 /* TableViewController.swift in Sources */,
 				24CBD2401D7F5C300010BEAF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
