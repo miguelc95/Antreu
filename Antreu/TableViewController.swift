@@ -21,6 +21,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         let dataBaseRef = FIRDatabase.database().reference()
         dataBaseRef.child("Posts").queryOrderedByKey().observeEventType(.ChildAdded, withBlock: {
             snapshot in
@@ -39,8 +40,8 @@ class TableViewController: UITableViewController {
     }
     
     func post(){
-        let title = "Title"
-        let message = "Message"
+        let title = "Hola"
+        let message = "Funciona"
         
         let post : [String : AnyObject] =  ["title" : title,
                                             "message" : message]
