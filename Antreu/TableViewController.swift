@@ -10,27 +10,33 @@ import UIKit
 import Firebase
 import FirebaseDatabase
 
-struct postStruct{
-    let title : String!
-    let message : String!
+/*struct postStruct{
+    let Nombre : String!
+    let Lugar : String!
 }
+ */
 class TableViewController: UITableViewController {
     
-    var posts = [postStruct]()
+    var posts = [Posts]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       // post()
         
         let dataBaseRef = FIRDatabase.database().reference()
-        dataBaseRef.child("Posts").queryOrderedByKey().observeEventType(.ChildAdded, withBlock: {
+        dataBaseRef.child("Antros").queryOrderedByKey().observeEventType(.ChildAdded, withBlock: {
             snapshot in
-            let title = snapshot.value!["title"] as! String
-            let message = snapshot.value!["message"] as! String
-            self.posts.insert(postStruct(title: title, message: message), atIndex: 0)
+             let nombre = snapshot.value!["Nombre"] as! String
+            let lugar = snapshot.value!["Lugar"] as! String
+            let newPost = Posts()
+            newPost.Nombre = nombre
+            newPost.Lugar = lugar
+            self.posts.insert(newPost , atIndex: 0)
             self.tableView.reloadData()
-            
         })
+        
+        
         
     }
     
@@ -39,16 +45,17 @@ class TableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
     
-    func post(){
-        let title = "Hola"
-        let message = "Funciona"
+    func post(){  // Función que hace post en la base de datos
+        let Nombre = "Sr. Mostacho"
+        let Lugar = "Paseo Tec"
         
-        let post : [String : AnyObject] =  ["title" : title,
-                                            "message" : message]
+        let post : [String : AnyObject] =  ["Nombre" : Nombre,
+                                            "Lugar" : Lugar]
         
         let databaseRef = FIRDatabase.database().reference()
         
-        databaseRef.child("Posts").childByAutoId().setValue(post)
+        databaseRef.child("Antros").childByAutoId().setValue(post)
+        
         
         }
     
@@ -60,11 +67,25 @@ class TableViewController: UITableViewController {
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell")
         
         let label1 = cell?.viewWithTag(1) as! UILabel
-        label1.text = posts[indexPath.row].title
+        label1.text = posts[indexPath.row].Nombre
         
         let label2 = cell?.viewWithTag(2) as! UILabel
-        label2.text = posts[indexPath.row].message
+        label2.text = posts[indexPath.row].Lugar
         return cell!
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let destination = segue.destinationViewController as? DetailsViewController
+        let selectedPost = posts[self.tableView.indexPathForSelectedRow!.row]
+        destination?.currentPost = selectedPost
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        NSLog("You selected cell number: \(indexPath.row)!")
+        self.performSegueWithIdentifier("Details", sender: self)
+    }
+    
+    
 
 }

@@ -60,6 +60,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                     // your backend server, if you have one. Use
                     // getTokenWithCompletion:completion: instead.
                     print("\(name) \n \(email)")
+                    let mainStoryboardIpad : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    let initialViewControlleripad : UIViewController = mainStoryboardIpad.instantiateViewControllerWithIdentifier("Navigation") as UIViewController
+                    self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+                    self.window?.rootViewController = initialViewControlleripad
+                    self.window?.makeKeyAndVisible()
+
                 } else {
                     // No user is signed in.
                 }
