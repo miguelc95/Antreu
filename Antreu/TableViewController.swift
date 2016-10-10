@@ -25,14 +25,15 @@ class TableViewController: UITableViewController {
        // post()
         
         let dataBaseRef = FIRDatabase.database().reference()
-        dataBaseRef.child("Antros").queryOrderedByKey().observeEventType(.ChildAdded, withBlock: {
+        dataBaseRef.child("Antros").queryOrderedByKey().observe(.childAdded, with: {
             snapshot in
-             let nombre = snapshot.value!["Nombre"] as! String
+            
+            let nombre = snapshot.value!["Nombre"] as! String
             let lugar = snapshot.value!["Lugar"] as! String
             let newPost = Posts()
             newPost.Nombre = nombre
             newPost.Lugar = lugar
-            self.posts.insert(newPost , atIndex: 0)
+            self.posts.insert(newPost , at: 0)
             self.tableView.reloadData()
         })
         
@@ -49,8 +50,8 @@ class TableViewController: UITableViewController {
         let Nombre = "Sr. Mostacho"
         let Lugar = "Paseo Tec"
         
-        let post : [String : AnyObject] =  ["Nombre" : Nombre,
-                                            "Lugar" : Lugar]
+        let post : [String : AnyObject] =  ["Nombre" : Nombre as AnyObject,
+                                            "Lugar" : Lugar as AnyObject]
         
         let databaseRef = FIRDatabase.database().reference()
         
@@ -59,31 +60,31 @@ class TableViewController: UITableViewController {
         
         }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return posts.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         let label1 = cell?.viewWithTag(1) as! UILabel
-        label1.text = posts[indexPath.row].Nombre
+        label1.text = posts[(indexPath as NSIndexPath).row].Nombre
         
         let label2 = cell?.viewWithTag(2) as! UILabel
-        label2.text = posts[indexPath.row].Lugar
+        label2.text = posts[(indexPath as NSIndexPath).row].Lugar
         return cell!
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let destination = segue.destinationViewController as? DetailsViewController
-        let selectedPost = posts[self.tableView.indexPathForSelectedRow!.row]
+        let destination = segue.destination as? DetailsViewController
+        let selectedPost = posts[(self.tableView.indexPathForSelectedRow! as NSIndexPath).row]
         destination?.currentPost = selectedPost
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        NSLog("You selected cell number: \(indexPath.row)!")
-        self.performSegueWithIdentifier("Details", sender: self)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        NSLog("You selected cell number: \((indexPath as NSIndexPath).row)!")
+        self.performSegue(withIdentifier: "Details", sender: self)
     }
     
     

@@ -1,9 +1,5 @@
 //
-//  Antreu-Bridging-Header.h
-//  Antreu
-//
-//  Created by Miguel Bazán on 9/6/16.
-//  Copyright © 2016 Miguel Bazán. All rights reserved.
+//  Use this file to import your target's public headers that you would like to expose to Swift.
 //
 
 #ifndef Antreu_Bridging_Header_h

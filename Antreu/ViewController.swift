@@ -22,7 +22,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
         
         // Crear el botton (x,y,widht,lenght)
         
-        buttonGoogle = GIDSignInButton(frame: CGRectMake(0,0,100,45))
+        buttonGoogle = GIDSignInButton(frame: CGRect(x: 0,y: 0,width: 100,height: 45))
         
         buttonGoogle.center = view.center       // poner el centro del boton en el centro del view
         
